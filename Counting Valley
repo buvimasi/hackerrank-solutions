@@ -1,0 +1,19 @@
+N = int(input().strip())
+
+String = input().strip()
+
+level = 0
+count = 0
+
+for i in String:
+    if i == 'U':
+        level += 1
+    elif i == 'D':
+        level -= 1
+    if level == 0:
+        if prev < level:
+            count += 1
+    prev = level
+
+print (count)
+        
